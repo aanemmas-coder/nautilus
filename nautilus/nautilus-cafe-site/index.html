@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Le Nautilus Café BD Ludothèque | Rabat</title>
+    <meta
+      name="description"
+      content="Café restaurant, BD et jeux de société à Rabat Agdal. Réservez une table au Nautilus Café BD Ludothèque."
+    />
+    <link rel="preload" as="image" href="assets/hero-nautilus.webp" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-elevated="false">
+      <a class="brand" href="#accueil" aria-label="Accueil Le Nautilus">
+        <span class="brand-mark">N</span>
+        <span>
+          <strong>Le Nautilus</strong>
+          <small>Café BD Ludothèque</small>
+        </span>
+      </a>
+
+      <button class="icon-button nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" aria-label="Navigation principale">
+        <a href="#menu">Menu</a>
+        <a href="#ludotheque">Ludothèque</a>
+        <a href="#evenements">Événements</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="header-action" href="#reservation">Réserver</a>
+    </header>
+
+    <main id="accueil">
+      <section class="hero">
+        <img class="hero-media" src="assets/hero-nautilus.webp" alt="Ambiance illustrée d'un café avec BD et jeux de société" />
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Rabat Agdal · Café restaurant · BD · Jeux</p>
+          <h1>Le Nautilus Café BD Ludothèque</h1>
+          <p class="hero-copy">
+            Un lieu chaleureux pour lire, jouer, bruncher et dîner entre amis ou en famille, au numéro 3 Rue Ouhoud.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#reservation">Réserver une table</a>
+            <a class="secondary-button" href="#menu">Voir le menu</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="quick-info" aria-label="Informations rapides">
+        <article>
+          <span>Adresse</span>
+          <strong data-setting="address">N°3, Rue Ouhoud, Agdal, Rabat</strong>
+        </article>
+        <article>
+          <span>Aujourd'hui</span>
+          <strong data-today-hours>Chargement...</strong>
+        </article>
+        <article>
+          <span>Réservation</span>
+          <strong><a data-setting-link="phoneHref" href="tel:+212666116817" data-setting="phone">+212 6 66 11 68 17</a></strong>
+        </article>
+        <article>
+          <span>Jeux</span>
+          <strong data-setting="gameFee">10 MAD / heure / personne</strong>
+        </article>
+      </section>
+
+      <section class="section intro-section">
+        <div class="section-kicker">Concept</div>
+        <div class="split-layout">
+          <div>
+            <h2>Café, cuisine et culture ludique dans une seule adresse.</h2>
+            <p>
+              Le positionnement public du Nautilus est clair: une expérience hybride qui réunit café, restaurant,
+              mangas, bandes dessinées et jeux de société. Le site met donc la transparence au centre: horaires,
+              tarifs de jeu, réservation et accès rapide à l'itinéraire.
+            </p>
+          </div>
+          <div class="metrics" aria-label="Points forts">
+            <div><strong>4,5+</strong><span>note Google publique</span></div>
+            <div><strong>50-100</strong><span>MAD fourchette moyenne</span></div>
+            <div><strong>1-2,5 h</strong><span>durée de visite typique</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section menu-section" id="menu">
+        <div class="section-heading">
+          <div>
+            <div class="section-kicker">Menu</div>
+            <h2>Des essentiels pour manger, boire et rester jouer.</h2>
+          </div>
+          <div class="filter-bar" role="tablist" aria-label="Filtrer le menu">
+            <button class="chip is-active" type="button" data-filter="all">Tout</button>
+            <button class="chip" type="button" data-filter="brunch">Brunch</button>
+            <button class="chip" type="button" data-filter="plats">Plats</button>
+            <button class="chip" type="button" data-filter="boissons">Boissons</button>
+          </div>
+        </div>
+
+        <div class="menu-grid" data-menu-grid>
+          <article class="menu-item" data-category="brunch">
+            <span>Pancakes maison</span>
+            <strong>À valider</strong>
+            <p>Option petit-déjeuner ou goûter, inspirée des mentions publiques.</p>
+          </article>
+          <article class="menu-item" data-category="plats">
+            <span>Burger Nautilus</span>
+            <strong>À valider</strong>
+            <p>Plat signature suggéré par les avis clients: burger frais et généreux.</p>
+          </article>
+          <article class="menu-item" data-category="plats">
+            <span>Pommes de terre truffées</span>
+            <strong>À valider</strong>
+            <p>Accompagnement souvent cité comme point fort de l'expérience.</p>
+          </article>
+          <article class="menu-item" data-category="plats">
+            <span>Salade raffinée</span>
+            <strong>À valider</strong>
+            <p>Option légère pour déjeuner ou dîner sur place.</p>
+          </article>
+          <article class="menu-item" data-category="boissons">
+            <span>Cafés & thés</span>
+            <strong>À valider</strong>
+            <p>Boissons chaudes pour lecture, travail calme et après-midi jeux.</p>
+          </article>
+          <article class="menu-item" data-category="boissons">
+            <span>Boissons fraîches</span>
+            <strong>À valider</strong>
+            <p>Une base simple à détailler avec la carte officielle.</p>
+          </article>
+        </div>
+
+        <div class="menu-note">
+          Les prix et items définitifs doivent être alignés avec la carte officielle avant publication.
+        </div>
+      </section>
+
+      <section class="visual-band">
+        <img src="assets/food-board.webp" alt="Illustration d'un burger, de pommes de terre et d'un café" />
+        <img src="assets/games-comics.webp" alt="Illustration de jeux de société et de bandes dessinées" />
+        <img src="assets/interior-lounge.webp" alt="Illustration d'un salon café avec bibliothèque" />
+      </section>
+
+      <section class="section ludotheque-section" id="ludotheque">
+        <div class="section-kicker">BD Ludothèque</div>
+        <div class="split-layout">
+          <div>
+            <h2>Un lieu pour rester, pas seulement consommer.</h2>
+            <p>
+              La proposition la plus différenciante du Nautilus est l'activité: mangas, romans graphiques,
+              jeux de société et moments familiaux. Le site doit aider les visiteurs à comprendre le concept
+              avant d'arriver, surtout la tarification des jeux.
+            </p>
+          </div>
+          <div class="feature-list">
+            <article>
+              <strong>BD, mangas et romans</strong>
+              <span>Espace lecture pour découvrir, feuilleter et prendre le temps.</span>
+            </article>
+            <article>
+              <strong>Jeux de société</strong>
+              <span data-setting="gameFeeLong">10 MAD / heure / personne, annoncé clairement dès la réservation.</span>
+            </article>
+            <article>
+              <strong>Familles et groupes</strong>
+              <span>Tables adaptées aux anniversaires, sorties entre amis et moments calmes.</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section events-section" id="evenements">
+        <div class="section-heading">
+          <div>
+            <div class="section-kicker">À programmer</div>
+            <h2>Des rendez-vous qui transforment le lieu en destination.</h2>
+          </div>
+        </div>
+        <div class="events-grid">
+          <article>
+            <span>Mercredi</span>
+            <strong>Soirée découverte jeux</strong>
+            <p>Une table animée pour apprendre un nouveau jeu sans pression.</p>
+          </article>
+          <article>
+            <span>Vendredi</span>
+            <strong>Dîner + partie longue</strong>
+            <p>Créneau pensé pour les groupes qui restent deux heures ou plus.</p>
+          </article>
+          <article>
+            <span>Week-end</span>
+            <strong>Famille & anniversaires</strong>
+            <p>Réservation de groupe, coin lecture et formule à confirmer.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section gallery-section" aria-label="Galerie">
+        <div class="section-heading">
+          <div>
+            <div class="section-kicker">Ambiance</div>
+            <h2>Une identité visuelle chaude, lisible et ludique.</h2>
+          </div>
+        </div>
+        <div class="gallery-grid">
+          <button class="gallery-tile" type="button" data-lightbox="assets/hero-nautilus.webp">
+            <img src="assets/hero-nautilus.webp" alt="Café avec étagères de livres et tables de jeu" />
+          </button>
+          <button class="gallery-tile" type="button" data-lightbox="assets/food-board.webp">
+            <img src="assets/food-board.webp" alt="Plat, café et présentation restaurant" />
+          </button>
+          <button class="gallery-tile" type="button" data-lightbox="assets/games-comics.webp">
+            <img src="assets/games-comics.webp" alt="Plateau de jeu et bandes dessinées" />
+          </button>
+          <button class="gallery-tile" type="button" data-lightbox="assets/interior-lounge.webp">
+            <img src="assets/interior-lounge.webp" alt="Espace intérieur avec bibliothèque" />
+          </button>
+        </div>
+      </section>
+
+      <section class="section reservation-section" id="reservation">
+        <div class="reservation-panel">
+          <div>
+            <div class="section-kicker">Réservation</div>
+            <h2>Préparer votre visite.</h2>
+            <p>
+              Choisissez un créneau, indiquez le nombre de personnes et ajoutez une note si vous souhaitez jouer,
+              dîner ou organiser un anniversaire.
+            </p>
+            <div class="reservation-summary" data-reservation-summary hidden></div>
+          </div>
+          <form class="booking-form" data-booking-form>
+            <label>
+              Nom
+              <input name="name" autocomplete="name" required placeholder="Votre nom" />
+            </label>
+            <label>
+              Téléphone
+              <input name="phone" autocomplete="tel" required placeholder="+212..." />
+            </label>
+            <div class="form-row">
+              <label>
+                Date
+                <input name="date" type="date" required />
+              </label>
+              <label>
+                Heure
+                <input name="time" type="time" required />
+              </label>
+            </div>
+            <div class="form-row">
+              <label>
+                Personnes
+                <input name="guests" type="number" min="1" max="30" value="2" required />
+              </label>
+              <label>
+                Type
+                <select name="visitType">
+                  <option>Déjeuner</option>
+                  <option>Dîner</option>
+                  <option>Jeux de société</option>
+                  <option>Anniversaire</option>
+                </select>
+              </label>
+            </div>
+            <label>
+              Note
+              <textarea name="note" rows="3" placeholder="Ex. table calme, jeux pour 4, anniversaire..."></textarea>
+            </label>
+            <button class="primary-button full-width" type="submit">Enregistrer la demande</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="contact-grid">
+          <div>
+            <div class="section-kicker">Contact</div>
+            <h2>Rue Ouhoud, Agdal, Rabat.</h2>
+            <p>
+              Le Nautilus se situe près du Stade Postal, avec accès pratique pour les rendez-vous, sorties
+              de groupe et pauses café.
+            </p>
+            <div class="contact-actions">
+              <a class="primary-button" data-setting-link="phoneHref" href="tel:+212666116817">Appeler</a>
+              <a class="secondary-button" data-setting-link="mapHref" href="https://www.google.com/maps/search/?api=1&query=Le%20Nautilus%20Cafe%20BD%20Ludotheque%20Rue%20Ouhoud%20Rabat" target="_blank" rel="noreferrer">Itinéraire</a>
+            </div>
+            <dl class="details-list">
+              <div>
+                <dt>Téléphone</dt>
+                <dd data-setting="phone">+212 6 66 11 68 17</dd>
+              </div>
+              <div>
+                <dt>Adresse</dt>
+                <dd data-setting="address">N°3, Rue Ouhoud, Agdal, Rabat</dd>
+              </div>
+              <div>
+                <dt>Horaires</dt>
+                <dd data-setting="hoursShort">Lun-Jeu 08:00-22:30 · Ven 08:00-23:00 · Sam 12:00-23:00 · Dim 12:00-22:30</dd>
+              </div>
+            </dl>
+          </div>
+          <div class="map-panel">
+            <iframe
+              title="Carte Le Nautilus Café BD Ludothèque"
+              loading="lazy"
+              src="https://www.google.com/maps?q=Le%20Nautilus%20Cafe%20BD%20Ludotheque%20Rue%20Ouhoud%20Rabat&output=embed"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="section faq-section" aria-label="Questions fréquentes">
+        <div class="section-kicker">Questions</div>
+        <h2>Les points à rendre évidents avant la visite.</h2>
+        <div class="accordion" data-accordion>
+          <button type="button" aria-expanded="false">
+            <span>Faut-il payer les jeux de société?</span>
+            <strong>+</strong>
+          </button>
+          <div>
+            <p data-setting="gameFeeLong">10 MAD / heure / personne, annoncé clairement dès la réservation.</p>
+          </div>
+
+          <button type="button" aria-expanded="false">
+            <span>Peut-on venir en famille?</span>
+            <strong>+</strong>
+          </button>
+          <div>
+            <p>Oui, le positionnement public met en avant les familles, les enfants, les adultes et les groupes.</p>
+          </div>
+
+          <button type="button" aria-expanded="false">
+            <span>Peut-on réserver pour un anniversaire?</span>
+            <strong>+</strong>
+          </button>
+          <div>
+            <p>Oui, le formulaire permet de préciser un anniversaire ou une table de groupe. La formule reste à valider avec l'équipe.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <strong>Le Nautilus Café BD Ludothèque</strong>
+        <span>Prototype basé sur informations publiques, à valider avec l'établissement avant mise en ligne.</span>
+      </div>
+      <button class="text-button" type="button" data-open-settings>Modifier infos</button>
+    </footer>
+
+    <dialog class="lightbox" data-lightbox-dialog>
+      <button class="icon-button" type="button" data-close-lightbox aria-label="Fermer">×</button>
+      <img alt="" data-lightbox-image />
+    </dialog>
+
+    <dialog class="settings-dialog" data-settings-dialog>
+      <form method="dialog" class="settings-panel" data-settings-form>
+        <div class="settings-head">
+          <div>
+            <span>Infos établissement</span>
+            <strong>Validation rapide</strong>
+          </div>
+          <button class="icon-button" value="cancel" aria-label="Fermer">×</button>
+        </div>
+        <label>
+          Téléphone
+          <input name="phone" />
+        </label>
+        <label>
+          Adresse courte
+          <input name="address" />
+        </label>
+        <label>
+          Horaires courts
+          <textarea name="hoursShort" rows="3"></textarea>
+        </label>
+        <label>
+          Tarif jeux
+          <input name="gameFee" />
+        </label>
+        <label>
+          Lien Google Maps
+          <input name="mapHref" />
+        </label>
+        <menu>
+          <button class="secondary-button" value="cancel">Annuler</button>
+          <button class="primary-button" value="default" type="submit">Appliquer</button>
+        </menu>
+      </form>
+    </dialog>
+
+    <script src="app.js"></script>
+  </body>
+</html>
